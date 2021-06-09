@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 25060,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "postgres",
+  "synchronize": false,
+  "logging": false,
+  "entities": ["src/config/db/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "migrationsTableName": "migrations_tbl",
+  "cli": {
+    "entitiesDir": "src/config/db/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
